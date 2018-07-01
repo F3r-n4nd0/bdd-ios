@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F1D2AF420E8C326000D4473 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1D2AF220E8C326000D4473 /* Nimble.framework */; };
+		8F1D2AF520E8C326000D4473 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1D2AF320E8C326000D4473 /* Quick.framework */; };
 		8F3C111220E874C30040417A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3C111120E874C30040417A /* AppDelegate.swift */; };
 		8F3C111920E874C50040417A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F3C111820E874C50040417A /* Assets.xcassets */; };
 		8F3C112720E874C60040417A /* Native_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3C112620E874C60040417A /* Native_AppTests.swift */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F1D2AF220E8C326000D4473 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		8F1D2AF320E8C326000D4473 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		8F3C110E20E874C30040417A /* Native App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Native App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F3C111120E874C30040417A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F3C111820E874C50040417A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,6 +97,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F1D2AF420E8C326000D4473 /* Nimble.framework in Frameworks */,
+				8F1D2AF520E8C326000D4473 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +184,8 @@
 		8F3C114520E87A3C0040417A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8F1D2AF220E8C326000D4473 /* Nimble.framework */,
+				8F1D2AF320E8C326000D4473 /* Quick.framework */,
 				8F3C117920E8A6840040417A /* NVActivityIndicatorView.framework */,
 				8F3C117520E89C620040417A /* RxCocoa.framework */,
 				8F3C117620E89C620040417A /* RxSwift.framework */,
@@ -279,6 +287,7 @@
 				8F3C112920E874C60040417A /* Sources */,
 				8F3C112A20E874C60040417A /* Frameworks */,
 				8F3C112B20E874C60040417A /* Resources */,
+				8F1D2AF620E8C32B000D4473 /* Run Script Carthage */,
 			);
 			buildRules = (
 			);
@@ -362,6 +371,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		8F1D2AF620E8C32B000D4473 /* Run Script Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+			);
+			name = "Run Script Carthage";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Quick.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Nimble.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
 		8F3C114A20E87AF40040417A /* Run Script Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -650,6 +677,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6KT99K9W6R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Native AppUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -670,6 +701,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6KT99K9W6R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Native AppUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
