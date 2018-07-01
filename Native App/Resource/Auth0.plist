@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   Auth0.plist
+   Native App
+
+   Created by Fernando Luna on 6/30/18.
+   Copyright (c) 2018 f3rn4nd0. All rights reserved.
+-->
+<plist version="1.0">
+    <dict>
+        <key>ClientId</key>
+        <string>6LWKiXhbMdvDXjnKcPARyfgQZtzbT5V5</string>
+        <key>Domain</key>
+        <string>f3r.auth0.com</string>
+    </dict>
+</plist>
