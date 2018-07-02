@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8F1D2AF420E8C326000D4473 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1D2AF220E8C326000D4473 /* Nimble.framework */; };
 		8F1D2AF520E8C326000D4473 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1D2AF320E8C326000D4473 /* Quick.framework */; };
+		8F1D2AF820E91E55000D4473 /* LoginTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1D2AF720E91E55000D4473 /* LoginTest.swift */; };
 		8F3C111220E874C30040417A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3C111120E874C30040417A /* AppDelegate.swift */; };
 		8F3C111920E874C50040417A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F3C111820E874C50040417A /* Assets.xcassets */; };
 		8F3C112720E874C60040417A /* Native_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3C112620E874C60040417A /* Native_AppTests.swift */; };
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		8F1D2AF220E8C326000D4473 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		8F1D2AF320E8C326000D4473 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		8F1D2AF720E91E55000D4473 /* LoginTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTest.swift; sourceTree = "<group>"; };
 		8F3C110E20E874C30040417A /* Native App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Native App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F3C111120E874C30040417A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F3C111820E874C50040417A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			children = (
 				8F3C113120E874C60040417A /* Native_AppUITests.swift */,
 				8F3C113320E874C60040417A /* Info.plist */,
+				8F1D2AF720E91E55000D4473 /* LoginTest.swift */,
 			);
 			path = "Native AppUITests";
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F3C113220E874C60040417A /* Native_AppUITests.swift in Sources */,
+				8F1D2AF820E91E55000D4473 /* LoginTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
